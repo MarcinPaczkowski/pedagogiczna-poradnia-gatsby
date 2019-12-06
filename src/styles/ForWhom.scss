@@ -1,0 +1,38 @@
+.forWhom {
+	position: relative;
+	height: 700px;
+
+	&-wrapper {
+		padding: 12px;
+	}
+
+	@media only screen and (max-width: 768px) {
+		height: 1500px;
+	}
+
+	&-background {
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center center;
+		height: 100%;
+		width: 100%;
+		position: absolute;
+	}
+
+	&-content {
+		height: 100%;
+		width: 100%;
+		background-color: rgba(0, 0, 0, 0.6);
+		position: absolute;
+		padding-top: 40px;
+
+		&--title {
+			text-align: center;
+			color: $blue;
+			font-size: 2.5em;
+			font-weight: 700;
+			text-shadow: 2px 2px 3px rgba(0, 0, 0, 1.6);
+			margin-bottom: 20px;
+		}
+	}
+}
