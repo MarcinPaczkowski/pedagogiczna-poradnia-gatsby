@@ -37,7 +37,7 @@ const about = () => {
                 </p>
                 <p className="about-content--item-desc">
                   W razie jakichkolwiek pytań lub sugestii zapraszam do
-                  <a href="#contact">kontaktu</a>.
+                  kontaktu.
                 </p>
               </div>
             </div>

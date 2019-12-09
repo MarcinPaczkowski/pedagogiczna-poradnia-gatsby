@@ -1,34 +1,36 @@
 .activity {
-	height: 250px;
-	width: 300px;
-	border-radius: 75px;
-	margin: auto;
-	margin-bottom: 20px;
-	color: $white;
-	padding: 20px 10px;
-	background-color: $pink;
+  height: 250px;
+  width: 360px;
+  border-radius: 75px;
+  margin: auto;
+  margin-bottom: 20px;
+  color: $white;
+  padding: 20px 10px;
+  background-color: $pink;
+  box-shadow: 4px 4px 10px 0px rgba(0, 0, 0, 0.5);
+  padding: 20px 10px;
 
-	@media screen and (max-width: 768px) {
-		height: 260px;
-		width: 270px;
-	}
+  @media screen and (max-width: 768px) {
+    height: 260px;
+    width: 270px;
+  }
 
-	@media screen and (max-width: 1090px) {
-		height: 285px;
-		width: 230px;
-	}
+  @media screen and (max-width: 1090px) {
+    height: 285px;
+    width: 230px;
+  }
 
-	&-title {
-		font-weight: 600;
-		font-size: 16px;
-		margin-bottom: 10px;
+  &-title {
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 10px;
 
-		@media screen and (max-width: 1090px) {
-			font-size: 14px;
-		}
-	}
+    @media screen and (max-width: 1090px) {
+      font-size: 14px;
+    }
+  }
 
-	&-desc {
-		font-size: 14px;
-	}
+  &-desc {
+    font-size: 14px;
+  }
 }
