@@ -2,9 +2,9 @@ module.exports = {
   siteMetadata: {
     siteUrl: `https://www.pedagogicznaporadnia.pl`,
     title: `Pedagogiczna Pora Dnia - Września | Korepetycje | Nauka czytania`,
-    description: `Poradnia pedagogiczna zaprasza rodziców i dzieci specjalistyczne zajęcia dostosowane do indywidualnych potrzeb.`,
+    description: `Poradnia pedagogiczna zaprasza dzieci na zajęcia z nauki czytania i korepetycje z matematyki, fizyki oraz innych przedmiotów szkolnych`,
     author: `Małgorzata Paczkowska`,
-    keywords: `poradnia, pedagogiczna, poradnia psychologiczna, września, dzieci, rozwiązywanie problemów, samorozwój, coaching, korepetycje, nauka czytania, pomoc w nauce`,
+    keywords: `korepetycje, nauka czytania, Września, Wrzesnia, pomoc w nauce, poradnia, pedagogiczna, poradnia psychologiczna, korepetycje matematyka, dzieci, rozwiązywanie problemów, samorozwój, coaching`,
   },
   plugins: [
     {
@@ -21,6 +21,13 @@ module.exports = {
       options: {
         name: `images`,
         path: `${__dirname}/src/images`,
+      },
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `files`,
+        path: `${__dirname}/src/files`,
       },
     },
     `gatsby-transformer-sharp`,
