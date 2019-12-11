@@ -10,7 +10,18 @@ module.exports = {
     {
       resolve: "gatsby-plugin-robots-txt",
       options: {
-        policy: [{ userAgent: "*", allow: "/" }],
+        policy: [
+          { userAgent: "*", allow: "/" },
+          { userAgent: "*", disallow: "/static/" },
+          { userAgent: "*", disallow: "/page-data/" },
+          { userAgent: "Googlebot-Image", disallow: "/" },
+        ],
+      },
+    },
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "G-7RY0HJ2CTL",
       },
     },
     `gatsby-plugin-sitemap`,
