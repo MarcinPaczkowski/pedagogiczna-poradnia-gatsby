@@ -21,14 +21,14 @@ import Cookies from "universal-cookie"
 library.add(fab, faChevronDown, faPhoneVolume, faEnvelope)
 
 class IndexPage extends Component {
-  componentDidMount() {
+  componentWillMount() {
     this.cookies = new Cookies()
     const isAccepted = this.cookies.get("privacy-policy")
     this.setState({ isAccepted: isAccepted || false })
   }
 
   state = {
-    isAccepted: false,
+    isAccepted: true,
   }
 
   close = () => {
