@@ -20,7 +20,9 @@ const info = () => {
                   alt="Logo pedagogiczna pora dnia"
                   className="info-content--logo"
                 />
-                <h1 className="info-content--title">Pedagogiczna Pora Dnia</h1>
+                <h1 className="info-content--title">
+                  Pedagogiczna Pora Dnia Test
+                </h1>
                 <h2 className="info-content--desc">
                   miejsce rozwoju nie tylko dla dziecka
                 </h2>
